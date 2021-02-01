@@ -4,17 +4,19 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm run build'
+                sh 'echo `INSTALANDO DEPENDENCIAS`'
+                sh 'pwd'
+                sh 'npm install'
+                
             }
             post {
                 always {
-                    
-                    sh 'pwd'
-                    sh 'javac '
+                    sh 'echo `BUILD`'
+                    sh 'npm run build'
                     
                 }
             }
-        },
+        }
        
     }
 }
