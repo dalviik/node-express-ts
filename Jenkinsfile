@@ -12,9 +12,7 @@ pipeline {
     }
 
     environment {
-        NEXUS_REGISTRY_URL = '
-http://192.168.100.254:8081/repository/npm-server/
-'
+        NEXUS_REGISTRY_URL = 'http://192.168.100.254:8081/repository/npm-server/'
         NEXUS_AUTH_TOKEN   = credentials('authwebexpress')
     }
 
