@@ -1,9 +1,9 @@
 {
     "name": "node-express-ts",
-    "version": "1.0.0",
+    "version": "1.2.0",
     "description": "",
     "publishConfig": {
-        "registry": "http://192.168.100.249:8081/repository/npm-server/"
+        "registry": "http://192.168.100.254:8081/repository/npm-server/"
     },
     "main": "index.js",
     "scripts": {
